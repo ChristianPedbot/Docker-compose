@@ -10,6 +10,8 @@ services:
       - mysql_data:/var/lib/mysql
     networks:
       - minhaNetwork
+    ports:
+      - "3306:3306"
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
